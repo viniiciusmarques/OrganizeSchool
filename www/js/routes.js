@@ -1,5 +1,5 @@
-angular.module('routes',[]).config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
+angular.module('starter')
+.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('login', {
       url: '/login',
