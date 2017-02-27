@@ -3,5 +3,4 @@ angular.module('starter')
   $scope.logar = function(){
       $state.go('home');
   };
-
 });
