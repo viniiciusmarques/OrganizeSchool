@@ -41,4 +41,12 @@
 /* edição titulo */
 .title {
   font-family: 'lobster';
+  text-align: center;
+}
+
+/*Efeito em botao*/
+.textoBotao{
+  font-family: 'lobster';
+  text-align: center;
+  font-size: 25px;
 }
