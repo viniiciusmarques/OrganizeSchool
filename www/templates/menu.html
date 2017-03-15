@@ -1,27 +1,27 @@
-<ion-side-menus>
-  <ion-side-menu-content>
+<ion-side-menus> <!-- Inicio de menu -->
+  <ion-side-menu-content> <!-- Conteudo fora do menu -->
     <ion-nav-bar class="bar bar-header bar-balanced">
-      <ion-nav-buttons side="left">
-        <button class="button button-icon ion-navicon-round" menu-toggle="center"></button>
+      <ion-nav-buttons side="left"> <!-- Botao menu lado esquerdo -->
+        <button class="button button-icon ion-navicon-round" menu-toggle></button> <!-- menu-toggle ativa menu -->
       </ion-nav-buttons>
     </ion-nav-bar>
-    <ion-nav-view name="menuConteudo"></ion-nav-view>
+    <ion-nav-view name="menuConteudo"></ion-nav-view> <!-- Aqui ira o conteudo das paginas -->
   </ion-side-menu-content>
-  <ion-side-menu side="left">
+  <ion-side-menu> <!-- inicio do menu -->
     <ion-header-bar class="bar bar-balanced">
       <h1 class="title" align-title="center">O que deseja fazer?</h1>
     </ion-header-bar>
-    <ion-content>
-      <div class="list card">
-        <div class="item item-avatar">
+    <ion-content> <!-- Conteudo do menu -->
+      <div class="list card"> <!-- inicio de carde -->
+        <div class="item item-avatar"> <!-- caixa de perfil -->
           <img src="img/testeSBD.jpg">
           <h2>Denis o Pimentinha</h2>
           <p>Cursando S.I.</p>
         </div>
       </div>
-      <ion-list>
+      <ion-list> <!-- lista -->
         <ion-item menu-close class="item-icon-left" href="#/menu/home">
-          <i class="icon ion-home"></i>
+          <i class="icon ion-home"></i> <!-- menu-close define fechamento do menu apos clicar botao -->
           Inicial
         </ion-item>
         <ion-item menu-close class="item-icon-left" href="#/menu/disciplinas">

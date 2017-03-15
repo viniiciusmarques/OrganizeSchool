@@ -3,16 +3,16 @@
   <ion-nav-title>
     <h1 class="title">Organize School</h1>
   </ion-nav-title>
-  <ion-nav-buttons side="right">
+  <ion-nav-buttons side="right"> <!-- Botao barra superior lado direito -->
     <button class="button button-clear button-white" ng-click="data.showorder = !data.showorder">Ordenar</button>
   </ion-nav-buttons>
   <ion-content>
     <div class="card">
-      <div class="item item-divider">
-        <h2 text-aling="center">disciplinas Cadastradas</h2>
+      <div class="item item-divider"> <!-- Cabeçalho do cartao -->
+        <h2>disciplinas Cadastradas</h2>
       </div>
-      <div class="item item-text-wrap">
-        <ion-list show-reorder="data.showorder" can-swipe="data.swipe">
+      <div class="item item-text-wrap"> <!-- Corpo do cartão -->
+        <ion-list show-reorder="data.showorder" can-swipe="data.swipe"> <!-- Variaveis de ordenação e deslize -->
           <ion-item ng-repeat="disciplina in disciplinas">
             <h2>{{disciplina.nome}}</h2><h3>{{disciplina.prof}}</h3>
             <ion-option-button class="button-assertive" ng-click="remover(disciplina)">

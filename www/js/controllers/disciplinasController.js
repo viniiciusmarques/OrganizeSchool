@@ -1,8 +1,8 @@
 angular.module('starter').controller('disciplinasController', function($scope) {
 
   $scope.data = {
-    showorder :false,
-    swipe :true
+    showorder :false, //desativar botao de reordem
+    swipe :true //ativar deslize de tela
   };
 
   $scope.disciplinas = [
@@ -12,7 +12,7 @@ angular.module('starter').controller('disciplinasController', function($scope) {
     {nome:'Calculo',sigla:'Calc',prof:'Leticia'},
     {nome:'Inglês Instrumental',sigla:'IngIns',prof:'Marcia'},
     {nome:'Estrutura de Dados',sigla:'EDados',prof:'Jaqueline'}
-  ];
+  ]; //objeto disciplina
 
   $scope.remover = function(disciplina) {
   $scope.disciplinas.splice($scope.disciplinas.indexOf(disciplina), 1);
