@@ -53,5 +53,14 @@ angular.module('starter')
       }
     })
 
+    .state('menu.config',{
+      url:'/config',
+      views: {
+        'menuConteudo' : {
+          templateUrl: 'templates/config.html'
+        }
+      }
+    })
+
     $urlRouterProvider.otherwise('/login');
   })
