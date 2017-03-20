@@ -18,7 +18,8 @@ angular.module('starter')
       url:'/home',
       views :{
         'menuConteudo' : {
-          templateUrl: 'templates/home.html'
+          templateUrl: 'templates/home.html',
+          controller: 'homeController'
         }
       }
     })

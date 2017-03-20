@@ -7,7 +7,7 @@ angular.module('starter').controller('disciplinasController', function($rootScop
   };
 
 //dados estaticos de disciplinas
-  $scope.disciplinas = [
+  $rootScope.disciplinas = [
     {nome:'Programação Web',sigla:'PrWeb',prof:'Daniel'},
     {nome:'Banco de Dados',sigla:'BD',prof:'Geraldo'},
     {nome:'Inteligencia Artificial',sigla:'IA',prof:'Jaqueline'},
