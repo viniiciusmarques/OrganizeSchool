@@ -33,16 +33,6 @@ angular.module('starter')
       }
     })
 
-      .state('menu.horarios',{
-      url:'/horarios',
-      views: {
-        'menuConteudo' : {
-          templateUrl: 'templates/horarios.html',
-          controller: 'horariosController'
-        }
-      }
-    })
-
     .state('menu.cadDisciplina',{
       url:'/cadDisciplina',
       views: {
@@ -52,5 +42,15 @@ angular.module('starter')
         }
       }
     })
+
+    .state('menu.horarios',{
+      url:'/horarios',
+      views: {
+        'menuConteudo' : {
+          templateUrl: 'templates/horarios.html',
+        }
+      }
+    })
+
     $urlRouterProvider.otherwise('/login');
   })
