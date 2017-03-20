@@ -12,11 +12,11 @@
       <h1 class="title" align-title="center">O que deseja fazer?</h1>
     </ion-header-bar>
     <ion-content> <!-- Conteudo do menu -->
-      <div class="list card"> <!-- inicio de carde -->
+      <div class="list card" ng-repeat="dadosUser in dadosUsers"> <!-- inicio de carde -->
         <div class="item item-avatar"> <!-- caixa de perfil -->
           <img src="img/testeSBD.jpg">
-          <h2>Denis o Pimentinha</h2>
-          <p>Cursando S.I.</p>
+          <h2>{{dadosUser.nome}}</h2>
+          <p>{{dadosUser.curso}}</p>
         </div>
       </div>
       <ion-list> <!-- lista -->
@@ -34,7 +34,7 @@
         </ion-item>
         <ion-item menu-close class="item-icon-left">
           <i class="icon ion-ios-calendar"></i>
-          Calendario
+          Agenda
         </ion-item>
       </ion-list>
       <br>

@@ -37,7 +37,8 @@ angular.module('starter')
       url:'/cadDisciplina',
       views: {
         'menuConteudo' : {
-          templateUrl: 'templates/cadDisciplina.html'
+          templateUrl: 'templates/cadDisciplina.html',
+          controller: 'disciplinasController'
         }
       }
     })
